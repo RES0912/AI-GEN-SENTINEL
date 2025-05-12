@@ -22,7 +22,7 @@ def main():
             font-size: 16px;
         }
         .stButton > button:hover {
-            background-color: #ADD8E6;
+            background-color: #FFFFFF;
         }
     .stApp {
         background-color: #ADD8E6;  /* Light blue background */
