@@ -13,8 +13,8 @@ def main():
     st.markdown("""
     <style>
         .stButton > button {
-            background-color: #ADD8E6;
-            color: Light Blue;
+            background-color: #FFFFFF;
+            color: White;
             padding: 10px 24px;
             border: none;
             cursor: pointer;
