@@ -30,7 +30,8 @@ def main():
         background-color: #ADD8E6;  /* Light blue background */
     }
     </style>
-    """, unsafe_allow_html=True)
+    """, 
+    unsafe_allow_html=True)
 
     st.markdown("Enter the screening data to get possible disease predictions.")
 
