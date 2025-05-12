@@ -24,6 +24,11 @@ def main():
         .stButton > button:hover {
             background-color: #ADD8E6;
         }
+    st.markdown(
+    """
+    .stApp {
+        background-color: #ADD8E6;  /* Light blue background */
+    }
     </style>
     """, unsafe_allow_html=True)
 
