@@ -14,7 +14,7 @@ def main():
     <style>
         .stButton > button {
             background-color: #ADD8E6;
-            color: Blue;
+            color: Light Blue;
             padding: 10px 24px;
             border: none;
             cursor: pointer;
