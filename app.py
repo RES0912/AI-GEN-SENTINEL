@@ -3,15 +3,31 @@ import pandas as pd
 import streamlit as st
 
 def predict_disease_from_input(hematocrit, hemoglobin, mch, mchc, mcv, wbc, neutrophils, lymphocytes, monocytes, eosinophils, basophils):
-    disease_prediction = np.random.choice(['Disease A', 'Disease B', 'Healthy'])
+    # Example rules for disease prediction (you can customize them based on real disease criteria)
+    
+    # Rule for Anemia (example condition)
+    if hematocrit < 35.0 and hemoglobin < 12.0:
+        disease_prediction = "Anemia"
+    # Rule for Leukemia (example condition)
+    elif wbc > 20.0 and neutrophils < 50.0:
+        disease_prediction = "Leukemia"
+    # Rule for Thalassemia (example condition)
+    elif mcv < 80.0 and mch < 25.0:
+        disease_prediction = "Thalassemia"
+    # Rule for Dehydration (example condition)
+    elif hematocrit > 50.0 and hemoglobin > 18.0:
+        disease_prediction = "Dehydration"
+    # Default to "Healthy" if none of the conditions are met
+    else:
+        disease_prediction = "Healthy"
+        
     return f"Based on the inputs, the possible disease is: {disease_prediction}"
 
 def main():
     
     st.image("dna.png", width=1000)
 
-    st.markdown("""
-    <style>
+    st.markdown("""<style>
         .stButton > button {
             background-color: #ADD8E6;
             color: light Blue;
@@ -28,8 +44,7 @@ def main():
         background-color: #ADD8E6;  /* Light blue background */
     }
     </style>
-    """, 
-    unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
     st.markdown("Enter the screening data to get possible disease predictions.")
 
@@ -66,4 +81,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
