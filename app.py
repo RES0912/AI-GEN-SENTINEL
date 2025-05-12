@@ -8,7 +8,7 @@ def predict_disease_from_input(hematocrit, hemoglobin, mch, mchc, mcv, wbc, neut
 
 def main():
     
-    st.image("dna.png", width=500)
+    st.image("dna.png", width=1000)
 
     st.markdown("""
     <style>
