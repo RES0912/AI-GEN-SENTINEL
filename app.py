@@ -7,7 +7,7 @@ def predict_disease_from_input(hematocrit, hemoglobin, mch, mchc, mcv, wbc, neut
     return f"Based on the inputs, the possible disease is: {disease_prediction}"
 
 def main():
-    st.title("AI-GEN SENTINEL")
+    
     st.image("dna.png", width=500)
 
     st.markdown("""
