@@ -13,7 +13,7 @@ def main():
     st.markdown("""
     <style>
         .stButton > button {
-            background-color: #BAE0F3;
+            background-color: #FFFFFF;
             color: Blue;
             padding: 10px 24px;
             border: none;
@@ -22,7 +22,7 @@ def main():
             font-size: 16px;
         }
         .stButton > button:hover {
-            background-color: #BAE0F3;
+            background-color: #FFFFFF;
         }
     </style>
     """, unsafe_allow_html=True)
