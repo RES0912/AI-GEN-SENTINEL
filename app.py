@@ -8,13 +8,13 @@ def predict_disease_from_input(hematocrit, hemoglobin, mch, mchc, mcv, wbc, neut
 
 def main():
     st.title("AI-GEN SENTINEL")
-    st.image("dna.png", width=200)
+    st.image("dna.png", width=500)
 
     st.markdown("""
     <style>
         .stButton > button {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #BAE0F3;
+            color: Blue;
             padding: 10px 24px;
             border: none;
             cursor: pointer;
@@ -22,7 +22,7 @@ def main():
             font-size: 16px;
         }
         .stButton > button:hover {
-            background-color: #45a049;
+            background-color: #BAE0F3;
         }
     </style>
     """, unsafe_allow_html=True)
